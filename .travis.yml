@@ -8,3 +8,5 @@ deploy:
   app: ancient-taiga-3972
   on:
     repo: ViniciusAnto09/PiNode
+
+before_script: chmod 0777 ./node_modules/.bin/mocha
