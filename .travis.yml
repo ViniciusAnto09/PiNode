@@ -7,4 +7,4 @@ deploy:
     secure: 4099b2bb-c329-4fda-871d-bc7515a30ccd
   app: ancient-taiga-3972
   on:
-    repo: ViniciusAnto09/PI
+    repo: ViniciusAnto09/PiNode
