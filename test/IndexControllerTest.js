@@ -1,4 +1,4 @@
-var PessoaController = require("../app/controllers/IndexController")
+var IndexController = require("../app/controllers/IndexController")()
 var expect = require("expect");
 
 describe("IndexController", function() {
