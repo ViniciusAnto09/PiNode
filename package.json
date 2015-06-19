@@ -20,6 +20,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Túlio Henrique",
+  
+  "scripts": {
+  "test": "./node_modules/mocha/bin/mocha"
+  },
+
+  
+  "author": "Vinícius Antônio",
   "license": "ISC"
+  
+  
 }
