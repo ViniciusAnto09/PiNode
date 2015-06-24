@@ -15,4 +15,8 @@ module.exports = function( app ) {
 	app.route("/subtrair")
 		.get(controller.direcionarSubtrair)
 		.post(controller.subtrair);
+		
+	app.route("/multiplicar")
+		.get(controller.direcionarMultiplicar)
+		.post(controller.multiplicar);
 };

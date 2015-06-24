@@ -51,6 +51,23 @@ module.exports = function( app ) {
 		
 		subtrair2Num : function(num1,num2){
 			return num1 - num2;
+		},
+		
+		direcionarMultiplicar : function(request, response){
+			response.render("multiplicar");
+		},
+		
+		multiplicar : function(	request, response ){	
+			var num1 = parseInt(request.body.num1);
+			var num2 = parseInt(request.body.num2);
+			var resultado = controller.multiplicar2Num(num1,num2);
+			response.render( "multiplicar" , {
+				"resultado" : resultado
+			});
+		},
+		
+		multiplicar2Num : function(num1,num2){
+			return num1 * num2;
 		}
 	};
     
