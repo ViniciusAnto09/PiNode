@@ -34,7 +34,7 @@ module.exports = function( app ) {
 		
 		somar2Num : function(num1,num2){
 			return num1 + num2;
-		}
+		},
 		
 		direcionarSubtrair : function(request, response){
 			response.render("subtrair");
