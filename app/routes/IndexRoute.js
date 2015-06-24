@@ -11,4 +11,8 @@ module.exports = function( app ) {
 	app.route("/somar")
 		.get(controller.direcionarSomar)
 		.post(controller.somar);
+	
+	app.route("/subtrair")
+		.get(controller.direcionarSubtrair)
+		.post(controller.subtrair);
 };
