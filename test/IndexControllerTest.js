@@ -12,7 +12,7 @@ describe("IndexController", function() {
 	});
 	
 	it("Espero quando passar 0 e 3 retorne 3", function() {
-		var retorno = IndexController.somar2Num(2,3);
+		var retorno = IndexController.somar2Num(0,3);
 		var esperado = 3;
 		
 		expect(retorno).toEqual(esperado);
