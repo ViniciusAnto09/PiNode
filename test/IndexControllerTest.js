@@ -25,6 +25,13 @@ describe("IndexController", function() {
 		expect(retorno).toEqual(esperado);	
 	});
 	
+	it("Espero quando passar -2 e -2 retorne -4", function() {
+		var retorno = IndexController.somar2Num(-2,-2);
+		var esperado = -4;
+		
+		expect(retorno).toEqual(esperado);	
+	});
+	
 	//Teste de Subtrair
 	it("Espero quando passar 3 e 2 retorne 1", function() {
 		var retorno = IndexController.subtrair2Num(3,2);
@@ -65,6 +72,13 @@ describe("IndexController", function() {
 	it("Espero quando passar -1 e -1 retorne 1", function() {
 		var retorno = IndexController.multiplicar2Num(-1,-1);
 		var esperado = 1;
+		
+		expect(retorno).toEqual(esperado);
+	});
+	
+	it("Espero quando passar 1 e -1 retorne -1", function() {
+		var retorno = IndexController.multiplicar2Num(1,-1);
+		var esperado = -1;
 		
 		expect(retorno).toEqual(esperado);
 	});
