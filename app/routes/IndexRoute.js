@@ -19,4 +19,8 @@ module.exports = function( app ) {
 	app.route("/multiplicar")
 		.get(controller.direcionarMultiplicar)
 		.post(controller.multiplicar);
+	
+	app.route("/dividir")
+		.get(controller.direcionarDividir)
+		.post(controller.dividir);
 };

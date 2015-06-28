@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
   	<link rel="stylesheet" type="text/css" href="estilo.css">
-  	<title>Hello Index</title>
+  	<title>PiNode</title>
 </head>
 <body>
+	<center>
 	<form action="meuNome" method="POST">
-		<input name="nome" type="text" />
-		<input type="submit" value="Enviar" />
+		<input name="nome" placeholder="Digite seu nome aqui" type="text"/>
+		<input type="submit" value="Enviar"/>
 	</form>
-	
-	<p><% if(locals.nome){%> Seu Nome  <%= nome%> <%}%></p>
+
+	<p>
+		<% 
+			if(locals.nome)
+				{ %>
+					<%= nome %> 
+				<% } %>
+		%>
+
+	</p>
+	</center>
 </body>
 </html>

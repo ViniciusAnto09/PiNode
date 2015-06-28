@@ -8,13 +8,13 @@ module.exports = function( app ) {
 		},
 		
 		direcionarMeuNome : function(request, response){
-			response.render("meu-nome");
+			response.render("index");
 		},
 		
 		meuNome : function(	request, response ){
 			var nome = request.body.nome;
 			
-			response.render( "meu-nome",{
+			response.render( "index",{
 				"nome" : nome
 			});
 		},
@@ -68,6 +68,23 @@ module.exports = function( app ) {
 		
 		multiplicar2Num : function(num1,num2){
 			return num1 * num2;
+		},
+		
+		direcionarDividir : function(request, response){
+			response.render("dividir");
+		},
+		
+		dividir : function(	request, response ){	
+			var num1 = parseFloat(request.body.num1);
+			var num2 = parseFloat(request.body.num2);
+			var resultado = controller.dividir2Num(num1,num2);
+			response.render( "dividir" , {
+				"resultado" : resultado
+			});
+		},
+		
+		dividir2Num : function(num1,num2){
+			return num1 / num2;
 		}
 	};
     

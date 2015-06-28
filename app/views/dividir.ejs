@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
   	<link rel="stylesheet" type="text/css" href="estilo.css">
-  	<title>Somar</title>
+  	<title>Dividir</title>
 </head>
 <body>
-	<form action="somar" method="POST">
+	<form action="dividir" method="POST">
 		<label> Numero 1</label>
 		<input name="num1" type="text" />
 		<br />
 		<label> Numero 2</label>
 		<input name="num2" type="text" />
 		<br />
-		<input type="submit" value="Somar" />
+		<input type="submit" value="Dividir" />
 		
 		<p><% if(locals.resultado){%> Valor Total  <%= resultado%> <%}%></p>
 	</form>
