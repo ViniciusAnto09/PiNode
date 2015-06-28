@@ -79,14 +79,14 @@ describe("IndexController", function() {
 	
 	it("Espero quando passar 3 e 2 retorne 1,5", function() {
 		var retorno = IndexController.dividir2Num(3,2);
-		var esperado = 1,5;
+		var esperado = 1.5;
 		
 		expect(retorno).toEqual(esperado);
 	});
 	
 	it("Espero quando passar -3 e 2 retorne -1,5", function() {
 		var retorno = IndexController.dividir2Num(-3,2);
-		var esperado = -1,5;
+		var esperado = -1.5;
 		
 		expect(retorno).toEqual(esperado);
 	});
